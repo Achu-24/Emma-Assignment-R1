@@ -1,0 +1,11 @@
+{
+  // Visit https://aka.ms/tsconfig to read more about this file
+  "compilerOptions": {
+  "target": "es2016", // Specifies the JavaScript version to compile to
+  "module": "commonjs", // The most important change: tells TS to use the older module system
+  "esModuleInterop": true, // Helps with compatibility between the two module systems
+  "forceConsistentCasingInFileNames": true, // Enforces consistent file naming
+  "strict": true, // Enables a wide range of type checking
+  "skipLibCheck": true // Skips type checking of declaration files
+},
+}
