@@ -60,8 +60,8 @@ async function pushRecordsToCRM() {
     console.log(`✅ ${sourceDataList.length} records retrieved.`);
 
     // Adjust the limit logic slightly
-    // const BATCH_LIMIT = 5;
-    const initialBatch = sourceDataList.slice(0, 5);
+    const BATCH_LIMIT = 6;
+    const initialBatch = sourceDataList.slice(0, 6);
     console.log(`Processing a sample batch of ${initialBatch.length} records.`);
 
     for (let index = 0; index < initialBatch.length; index++) {
