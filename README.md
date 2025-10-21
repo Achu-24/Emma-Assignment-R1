@@ -102,4 +102,7 @@ This script reads the data from the `BabyNames` table and pushes it as new **Con
 
 -----
 
+Documentation - Proposal of new steps to escalate this to a production level
+[https://docs.google.com/document/d/11SaPOG6ZrhBZPnT_4mgj5_5AuK--fWGp4Bl1HWR7ZAk/edit?usp=sharing]
 
+-----
