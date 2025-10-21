@@ -1,12 +1,13 @@
-This project is built on Node.js/TypeScript that performs three main steps:
+**Aim**:
+The aim of this project is to build a system that automatically fetches data from Kaggle, downloads the dataset, stores it in a MySQL database, and then sends each record as a contact to HubSpot through their API.
 
-1.  **Extracts** baby name data from a Kaggle dataset using **Playwright** (web scraping).
+1.  **Extracts** baby name data from a Kaggle dataset using **Playwright** .
 2.  **Stores** the data into a **MySQL** database using **Sequelize ORM**.
 3.  **Synchronizes** the stored data to **HubSpot CRM** as contact records via the HubSpot API.
 
 ## Project Setup and Initialization
 
-### 1\. Prerequisites 🛠️
+### 1. Prerequisites 
 
 Ensure you have the following installed on your machine:
 
@@ -20,8 +21,8 @@ Ensure you have the following installed on your machine:
 1.  **Clone the repository:**
 
     ```bash
-    git clone [YOUR-REPO-URL]
-    cd EMMA-ASSIGNMENT
+    git clone [https://github.com/Achu-24/Emma-Assignment-R1.git]
+    cd .\Emma-Assignment-R1\
     ```
 
 2.  **Install dependencies:**
@@ -93,6 +94,11 @@ This script reads the data from the `BabyNames` table and pushes it as new **Con
     ```bash
     npx ts-node src/hubspotSync.ts
     ```
+
+## ✅ Final Output
+- Successfully fetches and downloads baby name data from Kaggle.
+- Stores names and gender in a MySQL database using Sequelize.
+- Pushes all records to HubSpot CRM as contacts via API.
 
 -----
 

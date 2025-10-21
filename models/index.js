@@ -16,6 +16,7 @@ if (config.use_env_variable) {
   sequelize = new Sequelize(config.database, config.username, config.password, config);
 }
 
+//to load the models folder
 fs
   .readdirSync(__dirname)
   .filter(file => {
