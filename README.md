@@ -80,7 +80,7 @@ This script uses Playwright to log in to Kaggle, download the data, and insert i
   * **Action:** Fetches the data and performs bulk insert into the `BabyNames` table.
   * **Run:**
     ```bash
-    npx ts-node src/scraper.ts
+    npm run scrape
     ```
     *Note: The script is configured with `headless: false`, so you will see the browser window perform the actions.*
 
@@ -92,7 +92,7 @@ This script reads from the `BabyNames` table and pushes it as new **Contacts** t
   * **Action:** Reads data from MySQL and sends API requests to HubSpot.
   * **Run:**
     ```bash
-    npx ts-node src/hubspotSync.ts
+    npm run sync
     ```
 
 ## ✅ Final Output

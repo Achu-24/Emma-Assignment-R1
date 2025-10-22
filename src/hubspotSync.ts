@@ -45,8 +45,8 @@ async function pushRecordsToCRM() {
     const sourceDataList = await SourceRecordModel.findAll({ raw: true }) as unknown as DataItem[];
     console.log(`✅ ${sourceDataList.length} records retrieved.`);
 
-    const BATCH_LIMIT = 100;
-    const initialBatch = sourceDataList.slice(0, 100);
+    const BATCH_LIMIT =100;
+    const initialBatch = sourceDataList.slice(0,BATCH_LIMIT);
     console.log(`Processing a sample batch of ${initialBatch.length} records.`);
 
     for (let index = 0; index < initialBatch.length; index++) {
@@ -86,3 +86,5 @@ async function pushRecordsToCRM() {
 pushRecordsToCRM().catch(executionError => {
     console.error('Error in main sync process:', executionError);
 });
+
+
