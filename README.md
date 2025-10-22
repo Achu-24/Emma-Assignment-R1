@@ -86,7 +86,7 @@ This script uses Playwright to log in to Kaggle, download the data, and insert i
 
 ### Phase 3: CRM Synchronization (hubspotSync.ts)
 
-This script reads the data from the `BabyNames` table and pushes it as new **Contacts** to your HubSpot account via their API.
+This script reads from the `BabyNames` table and pushes it as new **Contacts** to your HubSpot account via their API.
 
   * **File:** `src/hubspotSync.ts`
   * **Action:** Reads data from MySQL and sends API requests to HubSpot.
