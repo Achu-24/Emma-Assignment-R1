@@ -45,8 +45,8 @@ async function pushRecordsToCRM() {
     const sourceDataList = await SourceRecordModel.findAll({ raw: true }) as unknown as DataItem[];
     console.log(`✅ ${sourceDataList.length} records retrieved.`);
 
-    const BATCH_LIMIT = 500;
-    const initialBatch = sourceDataList.slice(0, 500);
+    const BATCH_LIMIT = 100;
+    const initialBatch = sourceDataList.slice(0, 100);
     console.log(`Processing a sample batch of ${initialBatch.length} records.`);
 
     for (let index = 0; index < initialBatch.length; index++) {
